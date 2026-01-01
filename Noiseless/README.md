@@ -1,0 +1,11 @@
+- `Mathematica.nb`: Mathematica code used to evaluate the precision achieved with the heuristic probe states in Phys. Rev. Lett.125.020501 (2020).
+- `diff_opt_lower.m`: Code used to evaluate the lower bound.
+- `diff_opt_upper.m`: Code used to evaluate the upper bound.
+- `generateDn_d.m`: Function used to generate $\left\{ |w_x\rangle \right\} _{x=1}^{m}$ based on the construction presented in Quantum 7, 1094 (2023).
+- `myoperation.m`: Code used to implement the operation $_QX=\frac{I_Q}{d_Q}\otimes \mathrm{tr}_QX$.
+- `plot_figures`: Code used to generate figures.
+- `SDP_lower.m`: Semidefinite programming for lower bound.
+- `SDP_upper.m`: Semidefinite programming for upper bound.
+- `5run_t2dot5to3.mat`: Data for the upper bound presented in this work.
+- `lower_t2dot5to3.mat`: Data for the lower bound presented in this work.
+- `colormap_data_20_norm1.mat`, `colormap_data_20_norm2.mat`, `colormap_data_20_norm3.mat`: Data used to generate the colormap figure in the paper, where `norm1`, `norm2`, and `norm3` denote the cases $\left\| \boldsymbol{\theta } \right\| =1,\sqrt 2$, and $\sqrt 3$, respectively.
