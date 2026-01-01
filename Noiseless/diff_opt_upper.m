@@ -5,7 +5,6 @@ N = 2;
 % init
 syms theta1; syms theta2; syms theta3;
 numVar = 3;
-% true value, B = 1, theta = phi = pi/4;
 valth1 = 1/2; valth2 = 1/2; valth3 = sqrt(2)/2;
 
 H = theta1*Pauli(1) + theta2*Pauli(2) + theta3*Pauli(3);
@@ -45,7 +44,6 @@ N = 2;
 % init
 syms theta1; syms theta2; syms theta3;
 numVar = 3;
-% true value, B = 1, theta = phi = pi/4;
 
 len = 20;
 data = zeros(len+1,len+1);
@@ -98,7 +96,6 @@ N = 2;
 % init
 syms theta1; syms theta2; syms theta3;
 numVar = 3;
-% true value, B = 1, theta = phi = pi/4;
 
 len = 20;
 data = zeros(len+1,len+1);
@@ -150,7 +147,6 @@ N = 2;
 % init
 syms theta1; syms theta2; syms theta3;
 numVar = 3;
-% true value, B = 1, theta = phi = pi/4;
 
 len = 20;
 data = zeros(len+1,len+1);

@@ -1,8 +1,4 @@
 function res = SDP_lower(n,N, Ctheta, var, varvals, str)
-%SDP_LOWER function works for any N = 2
-% extend once
-% Ctheta is the Choi matrix for signal channels 
-% var stands for unknown variables 
 % str stands for types of strategies. 1 for i, 2 for ii, 3 for iii and 4
 % for iv
     numVar = size(var,2); % require var to be a row vector
@@ -22,7 +18,6 @@ function res = SDP_lower(n,N, Ctheta, var, varvals, str)
 %     cvx_solver mosek
     cvx_begin sdp quiet
         % % % % % % % %         variables  
-%         variable Yk(dimCalC*dimIO,dimCalC*dimIO) hermitian;
         variable Ykn(dimCalC^2*dimIO,dimCalC^2*dimIO) complex semidefinite;
         variable PartialYk1(dimIO,dimIO) complex semidefinite;
         variable PartialYk2(dimIO,dimIO) complex semidefinite;

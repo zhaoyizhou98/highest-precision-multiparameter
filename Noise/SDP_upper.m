@@ -1,21 +1,13 @@
 function res = SDP_upper(N, wx, Ctheta, var, varvals, str)
-% function works for any N
-% Ctheta is the Choi matrix for signal channels 
-% var stands for unknown variables 
 % str stands for types of strategies. 1 for i, 2 for ii, 3 for iii and 4
 % for iv
-% wx is a matrix with the i-th column a vector stands for w_x
+% wx is a matrix whose ith column is the vector w_x
     numvec = size(wx,2);
     numVar = size(var,2); % require var to be a row vector
     dimCalC = numVar + 1;
     dimO = 2^N;
     dimIO = 4^N;
 	tildeW = blkdiag(0,eye(3));
-%     tildeW = blkdiag(0,1,2,3);
-    % state = load("state.mat").state;
-%     state = RandomDensityMatrix(3);
-%     save state.mat state;
-    % tildeW = blkdiag(0,state);
 %     cvx_solver mosek;
     cvx_begin sdp quiet
         variable Xk(dimIO,dimIO,numvec) complex semidefinite;
@@ -24,7 +16,6 @@ function res = SDP_upper(N, wx, Ctheta, var, varvals, str)
         expression X(dimIO,dimIO);
         expression judDelta(numVar,numVar);
         expression bigX(dimCalC*dimIO, dimCalC*dimIO);
-%         bigX = zeros(dimCalC*dimIO,dimCalC*dimIO);
         bigX = 0;
         
         for idx = 1:numvec
@@ -43,7 +34,6 @@ function res = SDP_upper(N, wx, Ctheta, var, varvals, str)
                     )*bigX);
             end
         end
-%         X = zeros(dimIO,dimIO);
         X = 0;
         for idx = 1:numvec
             X = X + wx(1,idx)^2*Xk(:,:,idx);
@@ -56,7 +46,7 @@ function res = SDP_upper(N, wx, Ctheta, var, varvals, str)
 %             parallel
             myoperation(X,2*(1:N),repmat(2, 1, 2*N)) == X;
         elseif str == 2
-%             sequential only implemented the N = 2 case now
+%             sequential only implement the N = 2 case now
             myoperation(X,4,[2 2 2 2]) - myoperation(X,[3 4],[2 2 2 2]) + myoperation(X,[2 3 4],[2 2 2 2]) == X;
         elseif str == 3
             X == X1 + X2;

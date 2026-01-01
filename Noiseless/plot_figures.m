@@ -1,4 +1,3 @@
-%%
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
 % par case
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
@@ -41,10 +40,10 @@ xlim([2.55 3]);
 lgd = legend('Analytical lower bound','Heuristic state','$B^{\left( i \right)}_+$','$B^{\left( i \right)}_-$','Interpreter','latex');
 xlabel('$t$','Interpreter','latex');
 grid on;
-ax = gca;                 % 当前坐标轴
-ax.GridLineStyle = '--';  % 设置网格为虚线
+ax = gca;                 
+ax.GridLineStyle = '--';  
 %%
-% Application 1, figure 1, compare with 2016 PRL
+
 clear all; clc;
 B = 1;
 N = 2;
@@ -81,8 +80,8 @@ xlim([2.55 3]);
 lgd = legend('Heuristic state in Ref. [22]','Heuristic state in Ref. [42]','$B^{\left( i \right)}_+$','Interpreter','latex');
 xlabel('$t$','Interpreter','latex');
 grid on;
-ax = gca;                 % 当前坐标轴
-ax.GridLineStyle = '--';  % 设置网格为虚线
+ax = gca;                
+ax.GridLineStyle = '--';  
 
 %%
 clear all; clc;
@@ -98,18 +97,14 @@ analytical = (1+2*t/abs(sin(t)))^2/(4*N*(N+2)*t^2);
 data.data = data.data - analytical;
 h = imagesc(xaxis, yaxis, data.data);
 
-% 设置 NaN 的颜色为透明/白色 (重要步骤，否则 NaN 可能会显示成最低向颜色)
 set(h, 'AlphaData', ~isnan(data.data));
 set(gca, 'YDir', 'normal');
 set(gca, 'XTick', linspace(0,1,11));
 set(gca, 'YTick', linspace(0,1,11));
 
 
-% 方案 B: 等高线填充图 (二选一)
-% contourf(T1, T2, F, 20, 'LineColor', 'none'); 
-
 axis equal;
-axis([0 1 0 1]); % 限制坐标轴范围
+axis([0 1 0 1]); 
 colorbar;
 xlabel('$\theta_1$',"Interpreter","latex"); ylabel('$\theta_2$',"Interpreter","latex");
 %%
@@ -118,5 +113,4 @@ clear all; clc;
 fig = openfig('path','reuse');
 set(fig,'Units','pixels');
 set(fig,'Position',[1 1 604 423]);
-% 属性检查器
 inspect(fig);

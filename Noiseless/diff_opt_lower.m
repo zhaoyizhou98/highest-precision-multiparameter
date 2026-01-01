@@ -1,18 +1,11 @@
 clear all; clc;
 
-% N = 2 case, i.e., two signal channels
 N = 2;
-% init
 syms theta1; syms theta2; syms theta3;
 numVar = 3;
-% true value, B = 1, theta = phi = pi/4;
 valth1 = 1/2; valth2 = 1/2; valth3 = sqrt(2)/2;
 
-% state = RandomDensityMatrix(numVar);
-% save state.mat state;
-% choi matrix for the channel
 H = theta1*Pauli(1) + theta2*Pauli(2) + theta3*Pauli(3);
-
 lower_res = zeros(1,10);
 
 

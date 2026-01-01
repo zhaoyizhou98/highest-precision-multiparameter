@@ -1,4 +1,3 @@
-% 也许可以换一下wight matrix，可能效果更好
 clear all; clc;
 
 % N = 2 case, i.e., two signal channels
@@ -10,9 +9,6 @@ t = 0.1;
 % true value, B = 1, theta = phi = pi/4;
 valth1 = 1/2; valth2 = 1/2; valth3 = sqrt(2)/2;
 
-% state = RandomDensityMatrix(numVar);
-% save state.mat state;
-% choi matrix for the channel
 H = theta1*Pauli(1) + theta2*Pauli(2) + theta3*Pauli(3);
 
 value = zeros(3,9);
@@ -37,4 +33,3 @@ for col = 1:9
 end
 
 save lower_gamma66.mat value;
-% save str4.mat value4;
