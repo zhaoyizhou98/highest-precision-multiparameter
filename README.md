@@ -4,7 +4,7 @@ This repository serves as a companion to the research paper Zhao-Yi Zhou and Da-
 
 ### Structure of the repository
 
-The codes in this repository are used to assist the study of three-dimensional magnetic field estimation problem. The code used to study the noiseless case is stored in the file `Noiseless`, while the code for the noisy case is stored in the file `Noise`.
+The code in this repository is used to assist the study of the three-dimensional magnetic field estimation problem. The code used to study the noiseless case is stored in `Noiseless`, while the code for the noisy case is stored in `Noise`.
 
 ### Basic requirement 
 
