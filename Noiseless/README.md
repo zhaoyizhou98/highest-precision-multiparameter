@@ -2,7 +2,6 @@
 - `diff_opt_lower.m`: Code used to evaluate the lower bound.
 - `diff_opt_upper.m`: Code used to evaluate the upper bound.
 - `generateDn_d.m`: Function used to generate $\\{ |w_x\rangle \\} _{x=1}^{m}$ based on the construction presented in Quantum 7, 1094 (2023).
-- `nogap_upper.m`: Code used to evaluate the performance gap between strategies of types $ii$, $iii$, and $iv$.
 - `myoperation.m`: Code used to implement the operation $_QX=\frac{I_Q}{d_Q}\otimes \mathrm{tr}_QX$.
 - `plot_figures.m`: Code used to generate figures.
 - `SDP_lower.m`: Semidefinite programming for lower bound.
@@ -10,4 +9,3 @@
 - `5run_t2dot5to3.mat`: Data for the upper bound presented in this work.
 - `lower_t2dot5to3.mat`: Data for the lower bound presented in this work.
 - `colormap_data_20_norm1.mat`, `colormap_data_20_norm2.mat`, `colormap_data_20_norm3.mat`: Data used to generate the colormap figure in the paper, where `norm1`, `norm2`, and `norm3` denote the cases $\left\| \boldsymbol{\theta } \right\| =1,\sqrt 2$, and $\sqrt 3$, respectively.
-- `nogap_upper.mat` and `nogap_upper_1500.mat`: Data used to verify that there is no performance gap between strategies of types $ii$, $iii$, and $iv$.
