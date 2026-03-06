@@ -1,6 +1,6 @@
-## Evaluating the highest achievable precision in multiparameter estimation strategies
+## Unified and computable approach to optimal strategies for multiparameter estimation
 
-This repository serves as a companion to the research paper Zhao-Yi Zhou and Da-Jian Zhang, "Evaluating the highest achievable precision in multiparameter estimation strategies". 
+This repository serves as a companion to the research paper Zhao-Yi Zhou and Da-Jian Zhang, "Unified and computable approach to optimal strategies for multiparameter estimation". 
 
 ### Structure of the repository
 
