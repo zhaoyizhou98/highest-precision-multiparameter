@@ -1,0 +1,7 @@
+- `myoperation.m`: Code used to implement the operation $_QX=\frac{I_Q}{d_Q}\otimes \mathrm{tr}_QX$.
+- `opt_lower.m`: Code used to evaluate the lower bound.
+- `opt_upper.m`: Code used to evaluate the upper bound.
+- `SDP_lower.m`: Semidefinite programming for lower bound.
+- `SDP_upper.m`: Semidefinite programming for upper bound.
+- `lower_gamma66.mat`: Data for the lower bound presented in this work.
+- `upper_gamma66.mat`: Data for the upper bound presented in this work.
