@@ -1,0 +1,14 @@
+- `Mathematica.nb`: Mathematica code used to evaluate the precision achieved with the heuristic probe states in Phys. Rev. Lett.125.020501(2020).
+- `diff_opt_lower.m`: Code used to evaluate the lower bounds.
+- `diff_opt_upper.m`: Code used to evaluate the upper bounds.
+- `generateDn_d.m`: Function used to generate $\\{ |w_x\rangle \\} _{x=1}^{m}$ based on the construction presented in Quantum 7, 1094(2023).
+- `myoperation.m`: Code used to implement the operation $_QX=\frac{I_Q}{d_Q}\otimes \mathrm{tr}_QX$. 
+- `plot_figures.m`: Code used to generate figures.
+- `SDP_lower.m`: Semidefinite programming for lower bounds.
+- `SDP_upper.m`: Semidefinite programming for upper bounds.
+- `build_VB.m`: Code used to generate the isometry $V$ in `Sym_SDP_lower_Num.m`.
+- `build_SchurWeyl_U.m`: Code for generating the unitary matrix $U$ used in `Sym_SDP_lower_Num.m`.
+- `Sym_SDP_lower_Num.m`: Semidefinite programming for lower bounds with symmetry.
+- `upper_t3to3dot13.mat`: Data for the upper bounds presented in this work.
+- `lower_t3to3dot13.mat`: Data for the lower bounds presented in this work.
+- `colormap_data_20_norm1.mat`, `colormap_data_20_norm2.mat`, `colormap_data_20_norm3.mat`: Data used to generate the colormap figure in the paper, where `norm1`, `norm2`, and `norm3` denote the cases $\left\| \boldsymbol{\theta } \right\| =1,\sqrt 2$, and $\sqrt 3$, respectively. 
