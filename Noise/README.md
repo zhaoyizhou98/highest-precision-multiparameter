@@ -1,0 +1,17 @@
+- `myoperation.m`: Code used to implement the operation $_QX=\frac{I_Q}{d_Q}\otimes \mathrm{tr}_QX$.
+- `opt_lower.m`: Code used to evaluate the lower bounds.
+- `opt_upper.m`: Code used to evaluate the upper bounds.
+- `SDP_lower.m, SDP_lower_Num.m`: Semidefinite programming for lower bounds.
+- `SDP_upper.m, SDP_upper_Num.m`: Semidefinite programming for upper bounds.
+- `randombounds.m`: Check the strict hierarchy using random noise models.
+- `myrandomchannel.m`: Randomly generate quantum channels.
+- `lower_gamma66.mat`: Data for the lower bounds presented in this work.
+- `upper_gamma66.mat`: Data for the upper bounds presented in this work.
+- `dephasing_lower_x.mat`: Lower bounds of the dephasing noise model.
+- `dephasing_upper_rep4500_p_x.mat`: Upper bounds of the dephasing noise model.
+- `depolarizing_lower_x.mat`: Lower bounds of the depolarizing noise model.
+- `depolarizing_upper_rep4500_p_x.mat`: Upper bounds of the depolarizing noise model.
+- `MoreChannels.m`: Code for generating auxiliary data for the depolarizing and dephasing noise models.
+- `RandomChannels4Ele.mat`: Data for random noise models.
+- `4Ele_random_lower_col_x.mat`: Lower bounds of random noise models.
+- `4Ele_random_upper_idx_x.mat`: Upper bounds of random noise models.
